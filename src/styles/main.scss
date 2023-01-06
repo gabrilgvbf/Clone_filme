@@ -1,0 +1,322 @@
+@use 'variaveis';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+}
+
+@font-face {
+    font-family: Avenir-bold;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Avenir, sans-serif;
+
+    color: variaveis.$corFont;
+}
+
+.text-small-icones {
+
+
+    font-size: 12px;
+}
+
+body {
+    max-width: 100vw;
+    background-image: url(../../dist/images/fundo_avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    header {
+
+        display: flex;
+        width: 100%;
+        background-color: black;
+        height: 72px;
+        padding: 0 36px;
+        justify-content: space-between;
+        align-items: center;
+       
+
+
+        img {
+            height: 40px;
+            cursor: pointer;
+            @media(max-width:768px){
+                display: flex;
+                width:30px;
+                
+            }
+
+            &:nth-child(1) {
+                margin-right: 36px;
+                @media(max-width:768px){    
+                    margin-right:10px;
+                    
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            @media(max-width:768px){    
+                height: 200px;
+                display: flex;
+                justify-content:space-between;
+                
+            }
+
+
+
+
+            li {
+                color: variaveis.$corFont;
+                text-transform: uppercase;
+                padding: 16px 18px;
+                list-style: none;
+                text-align: center;
+                white-space: nowrap;
+                @media(max-width:768px){
+                    display: flex;
+                    width:30px;
+                    white-space: none;
+                    
+                }
+
+                span {
+
+                    padding: 2px;
+                    cursor: pointer;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom .3s;
+                    font-size: 13px;
+                    letter-spacing: 1.42px;
+                    font-family: Avenir-bold;
+                    @media(max-width:768px){
+                        display:none;
+                      
+                        
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid variaveis.$corFont ;
+
+                        transition: border-bottom .3s;
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+    main {
+        padding: 0 36px;
+
+        article {
+            .nome-filme {
+                padding: 56px 0 16px;
+
+                &__img {
+
+                    max-width: 341px;
+                    min-width: 100px;
+                    width: 35vw;
+                }
+            }
+
+            .icones {
+                &__icones-list {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        padding-right: 4px;
+
+                        img {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .selecao {
+
+            margin-top: 28px;
+            display: flex;
+
+            button {
+                padding: 0 24px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                width: 190px;
+                border: none;
+                border-radius: 0.25rem;
+                transition: ease .3s;
+
+                &:hover {
+                    filter: brightness(.7);
+                    transition: ease .3s;
+                }
+
+                i {
+                    color: black;
+                    font-size: 32px;
+
+                }
+
+                p {
+                    color: black;
+                    letter-spacing: 1.42px;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .selecao-share {
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin-left: 20px;
+
+                    i {
+                        color: #ccc;
+                        font-size: 32px;
+                        cursor: pointer;
+                        transition: ease .3s;
+
+                        &:hover {
+                            filter: brightness(.7);
+                            font-size: 34px;
+                            transition: ease .3s;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .sinopse {
+            font-size: 20px;
+            padding: 16px 0;
+            margin-bottom: 56px;
+
+        }
+    }
+
+    .tab-alvo {
+
+
+        border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+
+
+        ul {
+            margin-bottom: 15px;
+
+            li {
+                list-style: none;
+                display: inline;
+                padding-bottom: 15px;
+                margin-right: 40px;
+                border-bottom: solid 3px transparent;
+                transition: border-bottom .3s;
+                @media(max-width:768px){
+                    border-bottom: none;
+                    transition: none;
+                }
+                
+
+                &:hover {
+                    padding-bottom: 15px;
+                    border-bottom: solid 3px variaveis.$corFont;
+                    transition: border-bottom .3s;
+                    @media(max-width:768px){
+                        border-bottom: none;
+                        transition: none;
+                    }
+                }
+                
+                span {
+                    font-family: Avenir-bold;
+                    white-space: nowrap;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                }
+
+               
+            }
+        }
+
+    }
+
+    .tab {
+        margin-top: 10px;
+        .aba {
+            img{
+                width: 287px;
+                transition: ease .3s;
+                border: 4px solid transparent;
+                &:hover{
+                    width: 300px; 
+                    transition: ease .3s;
+                    border: 4px solid rgb(255, 255, 255);
+                }
+            }
+            li{
+                list-style: none;
+            }
+           
+            &--view{
+                li{
+                display: inline!important;
+                transition: display .5s;
+            }
+            }
+           
+            &__sugestoes {
+                
+                li{
+                    display: none;
+                    transition: display .5s;
+                }
+               
+                
+            }
+
+            &__extras{
+                
+                li{
+                    display: none;
+                    transition: display .5s;
+                }
+                
+
+            }
+
+            &__detalhes{
+                li{
+                    display: none;
+                    transition: display .5s;
+                }
+            }
+
+        }
+
+    }
+
+}

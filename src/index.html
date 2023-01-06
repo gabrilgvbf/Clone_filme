@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Avatar</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="nav__lista">
+                <img class="menu__list__logo" src="../dist/images/disneyplus.svg">
+
+
+                <li><span>inicio</span></li>
+                <li><span>pesquisa</li>
+                <li><span>minha lista</span></li>
+                <li><span>originais</span></li>
+                <li><span>filmes</span></li>
+                <li><span>séries</span></li>
+
+            </ul>
+
+        </nav>
+        <img class="menu__list__user" src="../dist/images/user.svg">
+    </header>
+    <main>
+        <article>
+            <div class="nome-filme"><img class="nome-filme__img" src="../dist/images/nome_avatar.png"></div>
+            <div class="icones">
+                <ul class="icones__icones-list">
+                    <li><img src="../dist/images/icon_classificao.png"></li>
+                    <li><img src="../dist/images/icon_ad.png"></li>
+                    <li><img src="../dist/images/icon_cc.png"></li>
+                    <li class="text-small-icones"><span>2009 • 2h 41min</span></li>
+
+                </ul>
+            </div>
+            <div class="selecao">
+                <button><i class="bi bi-play-fill"></i>
+                    <p>ASSISTIR</p>
+                </button>
+                <div class="selecao-share">
+                    <ul>
+                        <li><i class="bi bi-plus-circle"></i></li>
+                        <li><i class="bi bi-people"></i>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <p class="sinopse">"Avatar" nos leva para o mundo fantástico de Pandora, onde um homem embarca em<br>uma aventura épica. Ele terá de lutar para salvar aqueles que ama e o lugar que agora chamará de lar.</p>
+
+            <nav class="tab-alvo">
+                <ul>
+                    <li><span data-tab-button="sugestao" class="tab-alvo__item">SUGESTÕES</span></li>
+                    <li><span data-tab-button="extras" class="tab-alvo__item">EXTRAS</span></li>
+                    <li><span data-tab-button="detalhes" class="tab-alvo__item">DETALHES</span></li>
+                </ul>
+            </nav>
+            
+            <div class="tab">
+                <section data-tab-id="sugestao"s class=" aba aba--view aba__sugestoes">
+                    <ul>
+                        <li><img src="../dist/images/sugestoes_1.jpg"></li>
+                        <li><img src="../dist/images/sugestoes_2.jpg"></li>
+                        <li><img src="../dist/images/sugestoes_3.jpg"></li>
+                        <li><img src="../dist/images/sugestoes_4.jpg"></li>
+                    </ul>
+                </section>
+
+                <section data-tab-id="extras" class="aba  aba__extras">
+                <ul>
+                    <li><img src="../dist/images/extras_1.jpg"></li>
+                    <li><img src="../dist/images/extras_2.jpg"></li>
+                    <li><img src="../dist/images/extras_3.jpg"></li>
+                    <li><img src="../dist/images/extras_4.jpg"></li>
+
+                </ul>
+            </section>
+                <section  data-tab-id="detalhes" class="aba  aba__detalhes">
+                <ul>
+                    <li><div><h1>AVATAR </br></br>"Avatar" nos leva para o mundo fantástico de Pandora, onde um homem embarca em uma jornada épica de aventura e amor. Ele terá de lutar para salvar o único lugar que ele já chamou de lar. James Cameron, o realizador vencedor de um Óscar por "Titanic", apresenta uma experiência cinematográfica imersiva, com tecnologia revolucionária e personagens interessantes em uma história emocional e intemporal.</h1></div></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            </div>
+        </article>
+    </main>
+</body>
+<script src="../dist/scripts/main.js"></script>
+</html>
